@@ -50,7 +50,8 @@ class Homepage extends StatelessWidget {
               width: 44,
               decoration: BoxDecoration(
                 color: Colors.black12,
-                shape: BoxShape.circle,
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.circular(15),
               ),
               child: Icon(
                 Icons.notifications_outlined,
@@ -63,7 +64,8 @@ class Homepage extends StatelessWidget {
                 width: 44,
                 decoration: BoxDecoration(
                   color: Colors.black12,
-                  shape: BoxShape.circle,
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Icon(
                   Icons.shopping_bag_outlined
