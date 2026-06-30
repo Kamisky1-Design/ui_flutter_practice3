@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'search_bar.dart';
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
@@ -49,7 +49,7 @@ class Homepage extends StatelessWidget {
               height: 44,
               width: 44,
               decoration: BoxDecoration(
-                color: Colors.black12,
+                color: Colors.grey.shade200,
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.circular(15),
               ),
@@ -63,7 +63,7 @@ class Homepage extends StatelessWidget {
                 height: 44,
                 width: 44,
                 decoration: BoxDecoration(
-                  color: Colors.black12,
+                  color: Colors.grey.shade200,
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(15),
                 ),
@@ -74,6 +74,12 @@ class Homepage extends StatelessWidget {
             ],
           ),
         ),
+      ),
+      body: ListView(
+        padding: EdgeInsets.all(16),
+        children: [
+          CustomSearchBar(),
+        ],
       ),
     );
   }
