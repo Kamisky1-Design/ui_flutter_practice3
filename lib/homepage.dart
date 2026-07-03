@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'search_bar.dart';
 import 'category_card.dart';
+import 'promotional_card.dart';
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
@@ -82,6 +83,8 @@ class Homepage extends StatelessWidget {
           CustomSearchBar(),
           SizedBox(height: 30,),
          CategoryCard(), 
+         SizedBox(height: 30,),
+         PromotionalCard(),
         ],
       ),
     );
