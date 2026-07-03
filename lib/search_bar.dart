@@ -8,37 +8,38 @@ class CustomSearchBar extends StatelessWidget {
     return  SizedBox(
       height: 44,
       child: Row(
-        children: [Container(
-            height: 44,
-            width: 327,
-            decoration: BoxDecoration(
-              color: Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(15),
-            ),
-          
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                 crossAxisAlignment: CrossAxisAlignment.start, 
-                children: [
-                  Icon( 
-                    Icons.search, 
-                    color: Colors.black38,
-                    size: 35,),
-                    Center(
-                      child: Text('Search..', 
-                      style: TextStyle(
-                        color: Colors.black38,
-                        fontSize: 18,),
-                      )
-                      ),
-                ],
-              
+        children: [Expanded(
+          child: Container(
+              height: 44,
+              decoration: BoxDecoration(
+                color: Colors.grey.shade200,
+                borderRadius: BorderRadius.circular(15),
               ),
+            
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                   crossAxisAlignment: CrossAxisAlignment.start, 
+                  children: [
+                    Icon( 
+                      Icons.search, 
+                      color: Colors.black38,
+                      size: 35,),
+                      Center(
+                        child: Text('Search..', 
+                        style: TextStyle(
+                          color: Colors.black38,
+                          fontSize: 18,),
+                        )
+                        ),
+                  ],
+                
+                ),
+              ),
+          
             ),
-
-          ),
-          Spacer(),
+        ),
+        SizedBox(width: 12),
           Container(
             height: 44,
             width: 44,
@@ -47,7 +48,7 @@ class CustomSearchBar extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
             ),
             child: Icon(
-              Icons.tune_sharp, 
+              Icons.tune, 
               color: Colors.black,),
           )
         ],
