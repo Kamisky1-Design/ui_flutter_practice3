@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'search_bar.dart';
+import 'category_card.dart';
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
@@ -79,6 +80,8 @@ class Homepage extends StatelessWidget {
         padding: EdgeInsets.all(16),
         children: [
           CustomSearchBar(),
+          SizedBox(height: 30,),
+         CategoryCard(), 
         ],
       ),
     );
