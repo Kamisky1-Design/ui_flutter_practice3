@@ -21,3 +21,5 @@ flutter:
   assets:
     - assets/user.jpeg
     - assets/background_image2.jpg
+    - assets/man_background_image.jpg
+    - assets/woman_background_image.jpg

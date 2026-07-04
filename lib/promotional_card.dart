@@ -7,7 +7,7 @@ class PromotionalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(16),
-      height: 180,
+      height: 200,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
         image: DecorationImage(
@@ -26,7 +26,7 @@ class PromotionalCard extends StatelessWidget {
             style:TextStyle(
              color: Colors.white,
              fontWeight: FontWeight.bold, 
-             fontSize: 20,
+             fontSize: 22,
             ) ,
             ),
             SizedBox(height: 10,),

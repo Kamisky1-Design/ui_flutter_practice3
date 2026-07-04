@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'search_bar.dart';
 import 'category_card.dart';
 import 'promotional_card.dart';
+import 'popular_product_card.dart';
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
@@ -85,6 +86,8 @@ class Homepage extends StatelessWidget {
          CategoryCard(), 
          SizedBox(height: 30,),
          PromotionalCard(),
+         SizedBox(height: 30,),
+         PopularProductCard(),   
         ],
       ),
     );
