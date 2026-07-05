@@ -90,6 +90,52 @@ class Homepage extends StatelessWidget {
          PopularProductCard(),   
         ],
       ),
+      
+      //The navigation Bar section
+      bottomNavigationBar: Container(
+        height: 100,
+        decoration: BoxDecoration(
+          color: Colors.white,
+         
+        ),
+        child: ClipRRect(
+          borderRadius: const BorderRadius.only(
+            topLeft: Radius.circular(30),
+            topRight: Radius.circular(30),
+          ),
+          child: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            backgroundColor: Colors.white,
+            selectedItemColor: Colors.deepOrange,
+            unselectedItemColor: Colors.black,
+            currentIndex: 0,
+            showSelectedLabels: true,
+            showUnselectedLabels: true,
+            items: const [
+               BottomNavigationBarItem(
+                icon: Icon(Icons.home_outlined, size: 28,),
+                activeIcon: Icon(Icons.home, size: 28),
+                label: 'Home'
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.shopping_bag_outlined, size: 28),
+                activeIcon: Icon(Icons.shopping_bag_outlined, size: 28),
+                label: 'Shopping',
+                ),
+                BottomNavigationBarItem(
+                icon: Icon(Icons.favorite_border, size: 28),
+                activeIcon: Icon(Icons.favorite, size: 28),
+                label: 'Wishlist',
+                ),
+                BottomNavigationBarItem(
+                icon: Icon(Icons.person_outline, size: 28),
+                activeIcon: Icon(Icons.person, size: 28),
+                label: 'Account',
+                ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
